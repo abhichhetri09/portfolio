@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { meta, shopify } from "../assets/images";
 import {
   car,
   contact,
@@ -23,7 +23,11 @@ import {
   summiz,
   tailwindcss,
   threads,
+  java,
   typescript,
+  jira,
+  expo,
+  vite,
 } from "../assets/icons";
 
 export const skills = [
@@ -105,6 +109,26 @@ export const skills = [
   {
     imageUrl: typescript,
     name: "TypeScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: java,
+    name: "Java",
+    type: "Backend",
+  },
+  {
+    imageUrl: jira,
+    name: "Jira",
+    type: "Project Management",
+  },
+  {
+    imageUrl: expo,
+    name: "Expo",
+    type: "Mobile Development",
+  },
+  {
+    imageUrl: vite,
+    name: "Vite",
     type: "Frontend",
   },
 ];
