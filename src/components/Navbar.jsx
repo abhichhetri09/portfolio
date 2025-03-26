@@ -30,13 +30,15 @@ const Navbar = () => {
         </NavLink> */}
       {/* </nav> */}
       <NavLink to="/">
-        <p className="text-2xl blue-gradient_text font-semibold">Home</p>
+        <p className="text-2xl  blue-gradient_text font-semibold">Home</p>
       </NavLink>
-      <nav className="flex text-lg gap-7 font-medium">
+      <nav className="flex -lg gap-7 font-medium">
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-blue-600" : "text-black"
+            isActive
+              ? "text-blue-700   border rounded-md p-2"
+              : "text-white hover:text-gray-400 transition-all duration-200 border border-transparent rounded-md p-2"
           }
         >
           About
@@ -44,7 +46,9 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-blue-600" : "text-black"
+            isActive
+              ? "text-blue-700   border rounded-md p-2"
+              : "text-white hover:text-gray-400 transition-all duration-200 border border-transparent rounded-md p-2"
           }
         >
           Projects

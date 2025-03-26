@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
-    <section className="max-container bg-slate-800 ">
+    <section className="max-container bg-slate-900 ">
       <h1 className="head-text text-white">
         Hello, I'm{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
@@ -77,7 +77,7 @@ const About = () => {
                   borderBottomColor: experience.iconBg,
                   boxShadow: "none",
                 }}
-                dateClassName="text-black-800 font-medium text-sm"
+                dateClassName="date-text text-black-800 font-medium text-sm"
               >
                 <div>
                   <h3 className="text-black text-xl font-poppins font-semibold">

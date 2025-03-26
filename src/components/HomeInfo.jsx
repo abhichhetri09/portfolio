@@ -4,7 +4,7 @@ import { InfoBox } from "./InfoBox";
 const HomeInfo = ({ currentStage }) => {
   const renderContent = {
     1: {
-      text: "Hi, I am Abhishek khati chhetri",
+      text: "Hi, 👋 I am Abhishek khati chhetri",
     },
     2: {
       text: "I am a full stack developer",

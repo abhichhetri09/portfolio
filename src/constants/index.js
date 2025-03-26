@@ -157,51 +157,40 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: pricewise,
-    theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    iconUrl: car,
+    theme: "btn-back-orange",
+    name: "Java Bank Application",
     description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+      "A simple Bank application for creating an account, depositing money, withdrawing money, and deleting the account.",
+    link: "https://github.com/abhichhetri09/Java-Bank_Application",
+  },
+  {
+    iconUrl: pricewise,
+    theme: "btn-back-purple",
+    name: "Guessing Game",
+    description: "A fun guessing game application built in Java.",
+    link: "https://github.com/abhichhetri09/GuessingGame",
+  },
+  {
+    iconUrl: summiz,
+    theme: "btn-back-blue",
+    name: "Todo List",
+    description: "A simple todo list app to manage tasks.",
+    link: "https://github.com/abhichhetri09/todolist",
   },
   {
     iconUrl: threads,
     theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
+    name: "Recipe Web Application",
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
-  },
-  {
-    iconUrl: car,
-    theme: "btn-back-blue",
-    name: "Car Finding App",
-    description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
+      "A full-stack solution for users to explore, add, and like different recipes. Built with Spring Boot, Thymeleaf, and PostgreSQL.",
+    link: "https://github.com/abhichhetri09/RecipeApp",
   },
   {
     iconUrl: snapgram,
-    theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
-    description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
-  },
-  {
-    iconUrl: estate,
-    theme: "btn-back-black",
-    name: "Real-Estate Application",
-    description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
-  },
-  {
-    iconUrl: summiz,
     theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
-    description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+    name: "Expense Tracker",
+    description: "An app to help users track their expenses.",
+    link: "https://github.com/abhichhetri09/ExpenseTracker",
   },
 ];
