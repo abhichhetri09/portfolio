@@ -1,13 +1,16 @@
-import { Html } from "@react-three/drei";
-import React from "react";
+import { CirclesWithBar } from "react-loader-spinner";
 
 const Loader = () => {
   return (
-    <Html>
-      <div className="flex justify-center items-center">
-        <div className="w-20 h-20 border-2 border-opacity-20 border-primary-90 border-t-primary-90 rounded-full animate-spin" />
-      </div>
-    </Html>
+    <div>
+      <CirclesWithBar
+        color="#ffffff"
+        secondaryColor="#ffffff"
+        height={60}
+        visible={true}
+        speed={1}
+      />
+    </div>
   );
 };
 

@@ -5,9 +5,11 @@ import { Sky } from "../models/Sky";
 import { Bird } from "../models/Bird";
 import { Plane } from "../models/Plane";
 import { Island } from "../models/Island";
+import { useRef } from "react";
+import { HomeInfo } from "../components/HomeInfo";
 const Home = () => {
   const [isRotating, setIsRotating] = React.useState(false);
-
+  const [currentStage, setCurrentStage] = React.useState(1);
   const adjustIslandForScreenSize = () => {
     let screenScale, screenPosition;
 
@@ -38,49 +40,51 @@ const Home = () => {
     return [screenScale, screenPosition];
   };
   const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
-
+  const ref = useRef();
   return (
     <section className="w-full h-screen relative">
-      {/* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-        POPUP
-      </div> */}
+      {currentStage && (
+        <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+          <HomeInfo currentStage={currentStage} />
+        </div>
+      )}
       <Canvas
         className={`w-full h-screen bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
         }`}
+        ref={ref}
         camera={{ near: 0.1, far: 1000 }}
       >
-        <Suspense fallback={<Loader />}>
-          <directionalLight position={[1, 1, 1]} intensity={2} />
-          <ambientLight intensity={0.5} />
-          <pointLight position={[10, 5, 10]} intensity={2} />
-          <spotLight
-            position={[0, 50, 10]}
-            angle={0.15}
-            penumbra={1}
-            intensity={2}
-          />
-          <hemisphereLight
-            skyColor="#b1e1ff"
-            groundColor="#000000"
-            intensity={1}
-          />
-          <Sky />
-          <Bird />
-          <Island
-            isRotating={isRotating}
-            setIsRotating={setIsRotating}
-            position={islandPosition}
-            rotation={[0.1, 4.7077, 0]}
-            scale={islandScale}
-          />
-          <Plane
-            isRotating={isRotating}
-            position={biplanePosition}
-            rotation={[0, 20.1, 0]}
-            scale={biplaneScale}
-          />
-        </Suspense>
+        <directionalLight position={[1, 1, 1]} intensity={2} />
+        <ambientLight intensity={0.5} />
+        <pointLight position={[10, 5, 10]} intensity={2} />
+        <spotLight
+          position={[0, 50, 10]}
+          angle={0.15}
+          penumbra={1}
+          intensity={2}
+        />
+        <hemisphereLight
+          skyColor="#b1e1ff"
+          groundColor="#000000"
+          intensity={1}
+        />
+        <Sky isRotating={isRotating} />
+        <Bird />
+        <Island
+          isRotating={isRotating}
+          setIsRotating={setIsRotating}
+          position={islandPosition}
+          rotation={[0.1, 4.7077, 0]}
+          scale={islandScale}
+          setCurrentStage={setCurrentStage}
+        />
+        <Plane
+          isRotating={isRotating}
+          position={biplanePosition}
+          rotation={[0, 20.1, 0]}
+          scale={biplaneScale}
+        />
       </Canvas>
     </section>
   );
