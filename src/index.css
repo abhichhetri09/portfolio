@@ -30,10 +30,28 @@ body:has(.card[data-color="blue"]:hover) {
 body:has(.card[data-color="green"]:hover) {
   background-color: rgb(var(--green-rgb) / 25%);
 }
+/* Custom Loader Spinner */
+.Toastify__spinner {
+  border-color: white;
+  border-top: #425030;
+}
+
+/* Custom Toast Background & Text */
+.Toastify__toast {
+  background: #222831 !important; /* Dark mode */
+}
+
+.Toastify__progress-bar {
+  background: white !important; /* Custom progress bar */
+}
+.Toastify__toast-icon--success {
+  color: #c5c5c5; /* Change this to any color you like for the checkmark */
+  font-size: 20px; /* Adjust the size of the tick mark */
+}
 
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
 
   .head-text {
@@ -85,7 +103,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .cta-text {
-    @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
+    @apply text-white font-extrabold flex-1 text-3xl max-md:text-center;
   }
 }
 

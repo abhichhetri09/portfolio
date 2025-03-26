@@ -2,8 +2,10 @@ import React, { useRef, useState, Suspense } from "react";
 import { Button } from "../components/Button";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
-import { Loader } from "../components/Loader"; // Assuming Loader component uses Suspense and Canvas properly
+import { Loader } from "../components/Loader";
 import { Fox } from "../models/Fox";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -12,7 +14,6 @@ const Contact = () => {
     message: "",
   });
   const [currentAnimation, setCurrentAnimation] = useState("idle");
-
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
 
@@ -42,45 +43,45 @@ const Contact = () => {
     },
   ];
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setCurrentAnimation("hit");
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Abhishek",
-          from_email: form.email,
-          to_email: "abhishek.chhetri.10@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(() => {
-        setLoading(false);
-        setTimeout(() => {
-          setCurrentAnimation("idle");
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        }, [2000]);
 
-        alert("Message sent successfully!");
-      })
-      .catch((error) => {
-        setLoading(false);
-        alert("An error occurred, Please try again later!");
+    try {
+      await toast.promise(
+        emailjs.send(
+          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+          {
+            from_name: form.name,
+            to_name: "Abhishek",
+            from_email: form.email,
+            to_email: "abhishek.chhetri.10@gmail.com",
+            message: form.message,
+          },
+          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        ),
+        {
+          pending: "Sending message...",
+          success: "Message sent successfully!",
+          error: "An error occurred, please try again later!",
+        }
+      );
+
+      setTimeout(() => {
         setCurrentAnimation("idle");
-      });
+        setForm({ name: "", email: "", message: "" });
+      }, 2000);
+    } catch (error) {
+      setCurrentAnimation("idle");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <section className="relative flex lg:flex-row bg-gray-800 opacity-90 max-container">
+    <section className="relative flex lg:flex-row bg-slate-900 opacity-90 max-container">
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text text-white">Get in Touch</h1>
         <form
@@ -137,8 +138,6 @@ const Contact = () => {
             far: 1000,
           }}
         >
-          {/* Suspense Fallback for Loader Component */}
-
           <directionalLight position={[0, 0, 1]} intensity={2.5} />
           <ambientLight intensity={1} />
           <pointLight position={[5, 10, 0]} intensity={2} />
@@ -148,7 +147,6 @@ const Contact = () => {
             penumbra={1}
             intensity={2}
           />
-
           <Fox
             currentAnimation={currentAnimation}
             position={[0.5, 0.35, 0]}

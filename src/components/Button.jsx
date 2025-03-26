@@ -5,7 +5,7 @@ import { Loader } from "./Loader";
 
 const variantClasses = {
   primary: "bg-tealGreen-900 hover:bg-tealGreen-800 text-white",
-  secondary: "bg-gray-800 hover:bg-gray-700 text-white",
+  secondary: "bg-gray-700 hover:bg-gray-600 text-white",
   danger: "bg-red-900 hover:bg-red-800 text-white",
   success: "bg-green-900 hover:bg-green-800 text-white",
   outline:

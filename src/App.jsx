@@ -2,12 +2,14 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import { Navbar } from "../src/components/Navbar";
 import { About, Contact, Home, Projects } from "./pages";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
     <main className="bg-slate-300/20">
       <Router>
         <Navbar />
+        <ToastContainer pauseOnHover theme="dark" className=" text-white" />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
