@@ -50,8 +50,8 @@ const About = () => {
         <h3 className="subhead-text text-white">Work Experience.</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-300">
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
+            I've had the privilege of working with some amazing companies and
+            individuals. Here are a few of them.
           </p>
         </div>
 
