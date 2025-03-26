@@ -181,6 +181,14 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: estate,
+    theme: "btn-back-red",
+    name: "Movie Web Application",
+    description:
+      "MoviesApp is a React-based web application that allows users to explore movies, view details, and interact with various features. The project is built with Vite, React, and Firebase, and styled using Bootstrap and SASS.",
+    link: "https://amflex.netlify.app/",
+  },
+  {
     iconUrl: car,
     theme: "btn-back-orange",
     name: "Java Bank Application",
