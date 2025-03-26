@@ -1,12 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { logo } from "../assets/images";
 
 const Navbar = () => {
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Projects", path: "/projects" },
-  ];
   return (
     <header className="header">
       {/* <NavLink
