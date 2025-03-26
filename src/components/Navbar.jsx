@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Button from "./Button";
 const Navbar = () => {
   return (
     <header className="header">

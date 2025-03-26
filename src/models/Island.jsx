@@ -3,7 +3,13 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import islandScene from "../assets/3d/island.glb";
 import { a } from "@react-spring/three";
-const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
+const Island = ({
+  isRotating,
+  setIsRotating,
+  setCurrentStage,
+  currentFocusPoint,
+  ...props
+}) => {
   const islandRef = useRef();
   const { nodes, materials } = useGLTF(islandScene);
   const { gl, viewport } = useThree();
@@ -137,22 +143,22 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
-      // switch (true) {
-      //   case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
-      //     setCurrentStage(4);
-      //     break;
-      //   case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
-      //     setCurrentStage(3);
-      //     break;
-      //   case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
-      //     setCurrentStage(2);
-      //     break;
-      //   case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
-      //     setCurrentStage(1);
-      //     break;
-      //   default:
-      //     setCurrentStage(null);
-      // }
+      switch (true) {
+        case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
+          setCurrentStage(4);
+          break;
+        case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
+          setCurrentStage(3);
+          break;
+        case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
+          setCurrentStage(2);
+          break;
+        case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
+          setCurrentStage(1);
+          break;
+        default:
+          setCurrentStage(null);
+      }
     }
   });
 
