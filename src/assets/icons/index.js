@@ -18,7 +18,7 @@ import java from "./java.svg";
 import expo from "./expo.svg";
 import vite from "./vite.svg";
 import jira from "./jira.svg";
-
+import eventti from "./eventti.png";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 import car from "./car.svg";
@@ -31,7 +31,9 @@ import arrow from "./arrow.svg";
 import contact from "./contact.svg";
 import soundon from "./soundon.png";
 import soundoff from "./soundoff.png";
-
+import laravel from "./laravel.png";
+import swappie from "./swappie.webp";
+import php from "./php.svg";
 export {
   css,
   express,
@@ -65,4 +67,8 @@ export {
   java,
   expo,
   vite,
+  eventti,
+  laravel,
+  swappie,
+  php,
 };

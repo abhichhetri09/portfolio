@@ -1,4 +1,3 @@
-import { meta, shopify } from "../assets/images";
 import {
   car,
   contact,
@@ -28,6 +27,10 @@ import {
   jira,
   expo,
   vite,
+  eventti,
+  swappie,
+  laravel,
+  php,
 } from "../assets/icons";
 
 export const skills = [
@@ -131,26 +134,35 @@ export const skills = [
     name: "Vite",
     type: "Frontend",
   },
+  {
+    imageUrl: laravel,
+    name: "Laravel",
+    type: "Backend",
+  },
+  {
+    imageUrl: php,
+    name: "PHP",
+    type: "Backend",
+  },
 ];
 
 export const experiences = [
   {
-    title: "Frontend Developer & Mobile Developer",
-    company_name: "Vesko Ltd",
-    icon: meta,
+    title: "Frontend Developer ",
+    company_name: "Eventti",
+    icon: eventti,
     iconBg: "#a2d2ff",
-    date: "07/2024 – Present",
+    date: "07/2022 – Present",
     points: [
-      "Developed Vesko's business site using React, TypeScript, Tailwind CSS, and Vite.",
-      "Converted Figma designs into responsive components, ensuring high-quality UI/UX.",
-      "Managed GitHub PR merges and performed code reviews to ensure clean code practices.",
-      "Developed a React Native mobile app using Expo and optimized performance.",
+      "Developed and maintained the company's website using Laravel, PHP and MySQL",
+      "Collaborated with the team to design and implement new features and enhancements.",
+      "Managed the company's website and ensured it was up-to-date and running smoothly.",
     ],
   },
   {
     title: "Production Specialist",
     company_name: "Swappie",
-    icon: shopify,
+    icon: swappie,
     iconBg: "#b7e4c7",
     date: "09/2021 – 05/2023",
     points: [
