@@ -13,13 +13,16 @@ import "react-vertical-timeline-component/style.min.css";
 const About = () => {
   return (
     <section className="max-container bg-slate-900 ">
-      <div className="flex flex-row items-center justify-center p-4 gap-10 rounded-md bg-slate-800">
-        <img src={pp} alt="Profile" className="rounded-md h-72 w-60" />
-        <h1 className="head-text text-white">
-          Hello, I'm{" "}
-          <span className="blue-gradient_text font-semibold drop-shadow">
-            {" "}
-            Abhishek khati chhetri{" "}
+      <div className="flex flex-col md:flex-row items-center justify-center p-4 gap-6 md:gap-10 rounded-md bg-slate-800 w-full max-w-4xl mx-auto">
+        <img
+          src={pp}
+          alt="Profile"
+          className="rounded-md h-60 w-48 md:h-72 md:w-60 object-cover"
+        />
+        <h1 className="text-lg md:text-2xl font-semibold text-white text-center md:text-left">
+          Hello, I'm
+          <span className="blue-gradient_text font-semibold drop-shadow ml-2">
+            Abhishek Khati Chhetri
           </span>{" "}
           👋
         </h1>
