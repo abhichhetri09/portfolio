@@ -1,8 +1,12 @@
-import { NavLink } from "react-router-dom";
-
+import { NavLink, useLocation } from "react-router-dom";
+import { logo } from "../assets/icons/index";
 const Navbar = () => {
+  const { pathname } = useLocation();
+
   return (
-    <header className="header">
+    <header
+      className={`header ${pathname === "/" ? "fixed" : "bg-slate-800 sticky"}`}
+    >
       {/* <NavLink
         to="/"
         className="rounded-xl  flex shadow-md p-4 m-2 items-center justify-center bg-slate-700 "
@@ -23,32 +27,39 @@ const Navbar = () => {
           Projects
         </NavLink> */}
       {/* </nav> */}
-      <NavLink to="/">
-        <p className="text-2xl  blue-gradient_text font-semibold">Home</p>
-      </NavLink>
-      <nav className="flex -lg gap-7 font-medium">
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive
-              ? "text-blue-700   border rounded-md p-2"
-              : "text-white hover:text-gray-400 transition-all duration-200 border border-transparent rounded-md p-2"
-          }
-        >
-          About
+      <div className="container flex justify-between items-center mx-auto px-4 py-2">
+        <NavLink to="/">
+          <div className="text-white text-xl bg-black/20 rounded-xl p-2">
+            Abhishek
+          </div>
         </NavLink>
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            isActive
-              ? "text-blue-700   border rounded-md p-2"
-              : "text-white hover:text-gray-400 transition-all duration-200 border border-transparent rounded-md p-2"
-          }
-        >
-          Projects
-        </NavLink>
-      </nav>
-      {/* <Button variant="primary" size="md" title="Home" />
+        <nav className="flex gap-2">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `px-4 py-2 rounded transition-all duration-200 border ${
+                isActive
+                  ? "bg-black/30 text-white border-white/10"
+                  : "text-white hover:bg-black/30 border-transparent"
+              }`
+            }
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              `px-4 py-2 rounded transition-all duration-200 border ${
+                isActive
+                  ? "bg-black/30 text-white border-white/10"
+                  : "text-white hover:bg-black/30 border-transparent"
+              }`
+            }
+          >
+            Projects
+          </NavLink>
+        </nav>
+        {/* <Button variant="primary" size="md" title="Home" />
 
       {/* <Button variant="primary">Primary</Button>
       <Button variant="secondary">Secondary</Button>
@@ -62,6 +73,7 @@ const Navbar = () => {
       <Button variant="primary" size="lg">
         Primary
       </Button> */}
+      </div>
     </header>
   );
 };

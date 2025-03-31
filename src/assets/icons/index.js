@@ -34,6 +34,7 @@ import soundoff from "./soundoff.png";
 import laravel from "./laravel.png";
 import swappie from "./swappie.webp";
 import php from "./php.svg";
+import logo from "./logo.png";
 export {
   css,
   express,
@@ -43,6 +44,7 @@ export {
   javascript,
   mongodb,
   motion,
+  logo,
   mui,
   nextjs,
   nodejs,

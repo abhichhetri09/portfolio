@@ -9,25 +9,33 @@ import React from "react";
 import { pp } from "../assets/images/index";
 
 import "react-vertical-timeline-component/style.min.css";
+import { Section } from "../components/Section";
 
 const About = () => {
   return (
-    <section className="max-container bg-slate-900 px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col md:flex-row items-center justify-center p-4 gap-6 md:gap-10 rounded-md bg-slate-800 w-full max-w-5xl mx-auto">
-        <img
-          src={pp}
-          alt="Profile"
-          className="rounded-md h-48 w-36 sm:h-60 sm:w-48 md:h-72 md:w-60 object-cover"
-        />
-        <h1 className="text-lg sm:text-xl md:text-2xl font-semibold text-white text-center md:text-left">
-          👋 Hello, I'm
-          <span className="blue-gradient_text block font-semibold drop-shadow ml-2">
-            Abhishek Khati Chhetri
-          </span>{" "}
-        </h1>
-      </div>
+    <main className="bg-slate-800">
+      <Section>
+        <div className="container flex items-center justify-between px-6 py-10 gap-10">
+          <img
+            src={pp}
+            alt="Profile"
+            className="rounded-md w-52 md:h-96 md:w-96 object-cover object-top"
+          />
+          <div>
+            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-5xl font-semibold text-white">
+              👋 Hello, I'm
+              <span className="blue-gradient_text block font-semibold drop-shadow ml-2">
+                Abhishek Khati Chhetri
+              </span>{" "}
+            </h1>
+            <p className="lg:text-2xl mt-4 text-white">
+              Full-stack Developer, Freelancer.
+            </p>
+          </div>
+        </div>
+      </Section>
 
-      <div className="mt-5 text-slate-300 text-sm sm:text-base">
+      <Section className="mt-5 container text-slate-300 text-sm sm:text-base">
         <h1 className="text-white font-semibold">
           🔭 Frontend Developer | Eventti
         </h1>
@@ -42,9 +50,9 @@ const About = () => {
           or frontend development. ⚡ I love experimenting with new tech stacks
           in my spare time!
         </p>
-      </div>
+      </Section>
 
-      <div className="py-10">
+      <Section className="container">
         <h3 className="subhead-text text-white text-center sm:text-left">
           My Skills
         </h3>
@@ -65,9 +73,9 @@ const About = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Section>
 
-      <div className="py-10">
+      <Section className="container">
         <h3 className="subhead-text text-white text-center sm:text-left">
           Work Experience
         </h3>
@@ -126,11 +134,10 @@ const About = () => {
             ))}
           </VerticalTimeline>
         </div>
-      </div>
+      </Section>
 
-      <hr className="border-slate-200 my-6" />
       <CTA />
-    </section>
+    </main>
   );
 };
 

@@ -50,9 +50,6 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 @layer utilities {
-  .max-container {
-    @apply mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
-  }
   .date-text {
     color: black;
   }
@@ -66,6 +63,10 @@ body:has(.card[data-color="green"]:hover) {
 
   .head-text {
     @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+  }
+
+  .container {
+    @apply max-w-6xl mx-auto;
   }
 
   .subhead-text {
@@ -89,7 +90,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .header {
-    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+    @apply inset-x-0 top-0 z-50 py-2;
   }
 
   .footer {
@@ -106,10 +107,6 @@ body:has(.card[data-color="green"]:hover) {
 
   .neo-btn {
     @apply py-3 px-6 rounded-lg text-blue-500 text-center font-semibold sm:w-1/2 w-[90%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
-  }
-
-  .cta {
-    @apply w-full flex items-center md:flex-row flex-col sm:mt-16 mt-8 gap-7;
   }
 
   .cta-text {

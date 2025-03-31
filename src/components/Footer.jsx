@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { socialLinks } from "../constants";
 
 const Footer = () => {
-  return (
-    <footer className="footer font-poppins bg-slate-600">
-      <hr className="border-slate-200" />
+  const { pathname } = useLocation();
 
-      <div className="footer-container ">
+  return (
+    <footer className={pathname === "/" ? "hidden" : "block bg-slate-800 "}>
+      <div className="container py-8 flex flex-col md:flex-row justify-center border-t border-t-white/10 md:justify-between gap-4">
         <p className="text-white text-center">
           © 2025 <strong>Abhishek Khati Chhetri</strong>. All rights reserved.
         </p>
