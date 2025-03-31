@@ -20,11 +20,10 @@ const About = () => {
           className="rounded-md h-48 w-36 sm:h-60 sm:w-48 md:h-72 md:w-60 object-cover"
         />
         <h1 className="text-lg sm:text-xl md:text-2xl font-semibold text-white text-center md:text-left">
-          Hello, I'm
-          <span className="blue-gradient_text font-semibold drop-shadow ml-2">
+          👋 Hello, I'm
+          <span className="blue-gradient_text block font-semibold drop-shadow ml-2">
             Abhishek Khati Chhetri
           </span>{" "}
-          👋
         </h1>
       </div>
 
@@ -52,7 +51,7 @@ const About = () => {
         <div className="mt-8 flex flex-wrap justify-center sm:justify-start gap-6 sm:gap-12">
           {skills.map((skill) => (
             <div
-              className="block-container w-16 h-16 sm:w-20 sm:h-20"
+              className="block-container w-16 h-16 sm:w-20 sm:h-20 "
               key={skill.name}
             >
               <div className="btn-back rounded-xl" />
@@ -117,7 +116,7 @@ const About = () => {
                   {experience.points.map((point, index) => (
                     <li
                       key={`experience-point-${index}`}
-                      className="text-black-500/50 text-sm"
+                      className="text-black-500/100 text-sm"
                     >
                       {point}
                     </li>
