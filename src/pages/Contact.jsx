@@ -82,7 +82,7 @@ const Contact = () => {
   };
 
   return (
-    <Section className="bg-slate-800 h-[80dvh] flex items-center">
+    <Section className="bg-slate-800 h-screen flex items-center">
       <div className="container relative flex lg:flex-row opacity-90">
         <div className="flex-1 min-w-[50%] flex flex-col">
           <h1 className="head-text text-white">Get in Touch</h1>
