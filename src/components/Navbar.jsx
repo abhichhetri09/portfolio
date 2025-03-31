@@ -29,7 +29,7 @@ const Navbar = () => {
       {/* </nav> */}
       <div className="container flex justify-between items-center mx-auto px-4 py-2">
         <NavLink to="/">
-          <div className="text-white text-xl bg-black/20 rounded-xl p-2">
+          <div className="text-white text-xl bg-black/10 rounded-xl p-2">
             Abhishek
           </div>
         </NavLink>
