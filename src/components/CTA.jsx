@@ -8,8 +8,8 @@ const CTA = () => {
     navigate("/contact");
   };
   return (
-    <Section className="">
-      <div className="container py-20 bg-black/20 px-16 rounded-xl flex flex-col gap-4 md:flex-row">
+    <Section>
+      <div className="container py-8 bg-black/20 px-12 rounded-xl flex flex-col gap-4 md:flex-row">
         <p className="cta-text text-white">
           Have a project in mind? <br className="sm:block hidden" />
           Let&apos;s build something together!

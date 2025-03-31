@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`header ${pathname === "/" ? "fixed" : "bg-slate-800 sticky"}`}
+      className={`header ${pathname === "/" ? "fixed" : "bg-slate-900 sticky"}`}
     >
       {/* <NavLink
         to="/"

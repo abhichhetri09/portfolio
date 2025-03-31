@@ -6,8 +6,8 @@ import { projects } from "../constants/index";
 import { Section } from "../components/Section";
 const Projects = () => {
   return (
-    <Section className="bg-slate-800">
-      <div className="container">
+    <Section>
+      <Section className="container">
         <h1 className="head-text text-white">
           My{" "}
           <span className="blue-gradient_text drop-shadow font-semibold">
@@ -65,10 +65,9 @@ const Projects = () => {
           ))}
         </div>
 
-        <hr className="border-slate-200" />
-
-        <CTA />
-      </div>
+        <hr className="border-white/10 mt-10" />
+      </Section>
+      <CTA />
     </Section>
   );
 };

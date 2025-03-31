@@ -13,20 +13,22 @@ import { Section } from "../components/Section";
 
 const About = () => {
   return (
-    <main className="bg-slate-800">
+    <Section>
       <Section>
-        <div className="container flex items-center justify-between px-6 py-10 gap-10">
+        <div className="container flex flex-col md:flex-row items-center justify-between px-6 py-8 gap-10">
+          {/* Profile Image */}
           <img
             src={pp}
             alt="Profile"
-            className="rounded-md w-52 md:h-96 md:w-96 object-cover object-top"
+            className="rounded-md w-44 h-44 md:w-96 md:h-96 object-cover object-top mx-auto md:mx-0"
           />
-          <div>
+          {/* Intro Text */}
+          <div className="text-center md:text-left">
             <h1 className="text-lg sm:text-xl md:text-2xl lg:text-5xl font-semibold text-white">
               👋 Hello, I'm
               <span className="blue-gradient_text block font-semibold drop-shadow ml-2">
                 Abhishek Khati Chhetri
-              </span>{" "}
+              </span>
             </h1>
             <p className="lg:text-2xl mt-4 text-white">
               Full-stack Developer, Freelancer.
@@ -137,7 +139,7 @@ const About = () => {
       </Section>
 
       <CTA />
-    </main>
+    </Section>
   );
 };
 
