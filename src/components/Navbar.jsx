@@ -27,11 +27,18 @@ const Navbar = () => {
           Projects
         </NavLink> */}
       {/* </nav> */}
-      <div className="container flex justify-between items-center mx-auto px-4 py-2">
-        <NavLink to="/">
-          <div className="text-white text-xl bg-black/10 rounded-xl p-2">
-            Abhishek
-          </div>
+      <div className="container flex justify-between items-center py-4 px-8">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `px-4 py-2 rounded transition-all duration-200 border ${
+              isActive
+                ? "bg-black/30 text-white border-white/10"
+                : "text-white hover:bg-black/30 border-transparent"
+            }`
+          }
+        >
+          Abhishek
         </NavLink>
         <nav className="flex gap-2">
           <NavLink
