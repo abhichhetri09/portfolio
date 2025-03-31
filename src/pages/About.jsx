@@ -13,7 +13,7 @@ import "react-vertical-timeline-component/style.min.css";
 const About = () => {
   return (
     <section className="max-container bg-slate-900 ">
-      <div className="flex flex-row items-center justify-center p-4 gap-10">
+      <div className="flex flex-row items-center justify-center p-4 gap-10 rounded-md bg-slate-800">
         <img src={pp} alt="Profile" className="rounded-md h-72 w-60" />
         <h1 className="head-text text-white">
           Hello, I'm{" "}
