@@ -5,25 +5,39 @@ import {
 
 import { experiences, skills } from "../constants";
 import { CTA } from "../components/CTA";
+import React from "react";
+import { pp } from "../assets/images/index";
 
 import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
     <section className="max-container bg-slate-900 ">
-      <h1 className="head-text text-white">
-        Hello, I'm{" "}
-        <span className="blue-gradient_text font-semibold drop-shadow">
-          {" "}
-          Abhishek khati chhetri{" "}
-        </span>{" "}
-        👋
-      </h1>
+      <div className="flex flex-row items-center justify-center p-4 gap-10">
+        <img src={pp} alt="Profile" className="rounded-md h-72 w-60" />
+        <h1 className="head-text text-white">
+          Hello, I'm{" "}
+          <span className="blue-gradient_text font-semibold drop-shadow">
+            {" "}
+            Abhishek khati chhetri{" "}
+          </span>{" "}
+          👋
+        </h1>
+      </div>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-300">
         <p>
-          Software Engineer based in Helsinki, specializing in technical
-          education through hands-on learning and building applications.
+          🔭 Frontend Developer | Eventti Maintained and enhanced the company's
+          website using Laravel, PHP, and MySQL. 👯 I’m looking to collaborate
+          on innovative web development and mobile development projects,
+          especially those that leverage modern frontend technologies like React
+          and TypeScript. 🤝 I’m looking for help with expanding my knowledge in
+          cloud technologies (AWS, Azure) and improving my backend development
+          skills. 🌱 I’m currently learning more about cloud platforms and
+          backend technologies, while also working on data management solutions.
+          💬 Ask me about building scalable web applications, Java-based
+          applications, or anything related to frontend development. ⚡I love
+          experimenting with new tech stacks in my spare time!
         </p>
       </div>
 

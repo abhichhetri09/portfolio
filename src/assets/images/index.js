@@ -1,4 +1,3 @@
-import meta from "./meta.png";
-import shopify from "./shopify.png";
+import pp from "../images/Abhishek_PP.jpg";
 
-export { meta, shopify };
+export { pp };
