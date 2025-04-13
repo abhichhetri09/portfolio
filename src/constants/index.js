@@ -32,6 +32,7 @@ import {
   laravel,
   php,
 } from "../assets/icons";
+import { vesko } from "../assets/images";
 
 export const skills = [
   {
@@ -149,14 +150,17 @@ export const skills = [
 export const experiences = [
   {
     title: "Frontend Developer ",
-    company_name: "Eventti",
-    icon: eventti,
-    iconBg: "#a2d2ff",
-    date: "07/2022 – Present",
+    company_name: "Vesko",
+    icon: vesko,
+    iconBg: "#025938",
+    date: "07/2023 – Present",
+
     points: [
-      "Developed and maintained the company's website using Laravel, PHP and MySQL",
-      "Collaborated with the team to design and implement new features and enhancements.",
-      "Managed the company's website and ensured it was up-to-date and running smoothly.",
+      "Developed and maintained Vesko’s business website using React, Vite, TypeScript, and Tailwind CSS.",
+      "Collaborated with designers and stakeholders to implement responsive, accessible, and high-performing web interfaces.",
+      "Transitioned into the mobile team in January 2025, building a cross-platform mobile app using Expo, React Native, and TypeScript.",
+      "Built reusable components and maintained consistent UI/UX across platforms using Figma for design collaboration.",
+      "Participated in agile development processes including sprint planning, code reviews, and team meetings.",
     ],
   },
   {

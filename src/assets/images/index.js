@@ -1,3 +1,3 @@
 import pp from "../images/Abhishek_PP.jpg";
-
-export { pp };
+import vesko from "../images/vesko.png";
+export { pp, vesko };
