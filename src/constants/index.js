@@ -31,6 +31,7 @@ import {
   swappie,
   laravel,
   php,
+  hoviber,
 } from "../assets/icons";
 import { vesko } from "../assets/images";
 
@@ -148,6 +149,20 @@ export const skills = [
 ];
 
 export const experiences = [
+  {
+    title: "Full Stack Software Engineer",
+    company_name: "Hoviber",
+    icon: hoviber,
+    iconBg: "#ff69b4",
+    date: "07/2025 – Present",
+    points: [
+      "Working as a Full Stack Engineer on a student mobile app using React Native, Expo, TypeScript, and Firebase.",
+      "Led the frontend mobile team, handling code reviews, team coordination, and sprint planning.",
+      "Implemented a custom calendar UI that fetches drop-in lessons and group sessions in real time.",
+      "Introduced bottom tab navigation and a hamburger menu for improved user experience.",
+      "Collaborated cross-functionally to define delivery methods and contributed to backend architecture design.",
+    ],
+  },
   {
     title: "Frontend Developer ",
     company_name: "Vesko",

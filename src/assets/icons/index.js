@@ -35,6 +35,7 @@ import laravel from "./laravel.png";
 import swappie from "./swappie.webp";
 import php from "./php.svg";
 import logo from "./logo.png";
+import hoviber from "./hobiver.png";
 export {
   css,
   express,
@@ -73,4 +74,5 @@ export {
   laravel,
   swappie,
   php,
+  hoviber,
 };
