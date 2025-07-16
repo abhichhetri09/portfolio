@@ -150,17 +150,17 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Full Stack Software Engineer",
+    title: "Internation Project Manager",
     company_name: "Hoviber",
     icon: hoviber,
     iconBg: "#ff69b4",
     date: "07/2025 – Present",
     points: [
-      "Working as a Full Stack Engineer on a student mobile app using React Native, Expo, TypeScript, and Firebase.",
-      "Led the frontend mobile team, handling code reviews, team coordination, and sprint planning.",
-      "Implemented a custom calendar UI that fetches drop-in lessons and group sessions in real time.",
-      "Introduced bottom tab navigation and a hamburger menu for improved user experience.",
-      "Collaborated cross-functionally to define delivery methods and contributed to backend architecture design.",
+      "Contributing to the development of a cross-platform mobile application using modern web and mobile technologies.",
+      "Collaborating with cross-functional teams to deliver scalable, maintainable, and user-centric solutions.",
+      "Leading the frontend mobile team with responsibilities including code reviews, sprint planning, and team coordination.",
+      "Ensuring consistent UI/UX and performance across platforms through reusable components and design system integration.",
+      "Participating in architectural discussions and supporting both frontend and backend development efforts.",
     ],
   },
   {
@@ -168,7 +168,7 @@ export const experiences = [
     company_name: "Vesko",
     icon: vesko,
     iconBg: "#025938",
-    date: "07/2023 – Present",
+    date: "07/2024 – 07/2025",
 
     points: [
       "Developed and maintained Vesko’s business website using React, Vite, TypeScript, and Tailwind CSS.",
