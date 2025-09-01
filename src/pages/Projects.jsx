@@ -23,45 +23,64 @@ const Projects = () => {
           enhancements. Your collaboration is highly valued!
         </p>
 
-        <div className="flex flex-wrap p-2 gap-10 justify-center sm:justify-start">
-          {projects.map((project) => (
-            <div
-              className="lg:w-[320px] p-6 rounded-md bg-black/20 w-full hover:scale-105 transition-all duration-200 cursor-pointer"
-              key={project.name}
-            >
-              <div className="block-container w-12 h-12">
-                <div className={`btn-back rounded-xl ${project.theme}`} />
-                <div className="btn-front rounded-xl flex justify-center items-center">
-                  <img
-                    src={project.iconUrl}
-                    alt="threads"
-                    className="w-1/2 h-1/2 object-contain"
-                  />
-                </div>
-              </div>
+                 <div className="flex flex-wrap p-2 gap-10 justify-center sm:justify-start">
+           {projects.map((project) => (
+                          <div
+                className="lg:w-[320px] h-[420px] p-6 rounded-md bg-black/20 w-full hover:scale-105 transition-all duration-200 cursor-pointer flex flex-col"
+                key={project.name}
+              >
+               <div className="block-container w-12 h-12">
+                 <div className={`btn-back rounded-xl ${project.theme}`} />
+                 <div className="btn-front rounded-xl flex justify-center items-center">
+                   <img
+                     src={project.iconUrl}
+                     alt="threads"
+                     className="w-1/2 h-1/2 object-contain"
+                   />
+                 </div>
+               </div>
 
-              <div className="mt-5 flex flex-col">
-                <h4 className="text-2xl font-poppins text-white font-semibold">
-                  {project.name}
-                </h4>
-                <p className="mt-2 text-slate-400">{project.description}</p>
-                <div className="mt-5 flex items-center gap-2 font-poppins">
-                  <Link
-                    to={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-blue-600"
-                  >
-                    Live Link
-                  </Link>
-                  <img
-                    src={arrow}
-                    alt="arrow"
-                    className="w-4 h-4 object-contain"
-                  />
-                </div>
-              </div>
-            </div>
+               <div className="mt-5 flex flex-col flex-grow">
+                 <h4 className="text-2xl font-poppins text-white font-semibold">
+                   {project.name}
+                 </h4>
+                 <p className="mt-2 text-slate-400 flex-grow">{project.description}</p>
+                 <div className="mt-5 flex flex-col gap-2 font-poppins">
+                   {project.link && (
+                     <div className="flex items-center gap-2">
+                       <Link
+                         to={project.link}
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         className="font-semibold text-green-500 hover:text-green-400 transition-colors"
+                       >
+                         Live Demo
+                       </Link>
+                       <img
+                         src={arrow}
+                         alt="arrow"
+                         className="w-4 h-4 object-contain"
+                       />
+                     </div>
+                   )}
+                   <div className="flex items-center gap-2">
+                     <Link
+                       to={project.sourceCode}
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="font-semibold text-blue-600 hover:text-blue-500 transition-colors"
+                     >
+                       Source Code
+                     </Link>
+                     <img
+                       src={arrow}
+                       alt="arrow"
+                       className="w-4 h-4 object-contain"
+                     />
+                   </div>
+                 </div>
+               </div>
+             </div>
           ))}
         </div>
 

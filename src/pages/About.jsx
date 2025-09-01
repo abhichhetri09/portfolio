@@ -31,7 +31,7 @@ const About = () => {
               </span>
             </h1>
             <p className="lg:text-2xl mt-4 text-white">
-              Full-stack Developer, Freelancer.
+             International Project Manager, Full-stack Developer.
             </p>
           </div>
         </div>
@@ -39,25 +39,12 @@ const About = () => {
 
       <Section className="mt-5 container text-slate-300 text-sm sm:text-base">
         <h1 className="text-white font-semibold">
-          🔭 Frontend Developer | Vesko
+            🔭 International Project Manager/Full-stack Developer | Hoviber
         </h1>
         <p>
-          At Vesko, I started as a Frontend Web Developer, contributing to the
-          company's digital transformation by building scalable and responsive
-          web applications using React, Vite, TypeScript, and Tailwind CSS. One
-          of my key projects included developing Vesko's official business
-          website, focusing on performance, accessibility, and modern UI design.
-          Since January 2025, I transitioned into the Mobile Development Team,
-          where I'm currently working on building Vesko’s mobile application
-          using Expo, React Native, and TypeScript. I collaborate closely with
-          designers and stakeholders to implement intuitive user experiences and
-          scalable architecture for cross-platform apps. Key responsibilities:
-          Developed and deployed Vesko’s business website with a modern frontend
-          stack Built reusable UI components and integrated responsive design
-          principles Contributed to the mobile app architecture and feature
-          development Participated in code reviews, sprint planning, and team
-          meetings Used tools like Figma, Jira, and Git for design collaboration
-          and agile development
+        I’m Abhishek Khati Chhetri, a Helsinki-based tech professional currently working as an International Project Manager at Hoviber, where I lead cross-functional digital projects with a strong focus on execution, quality, and collaboration. In addition to my management role, I actively contribute as a Full-Stack and Mobile Developer, bridging business goals with practical, scalable tech solutions.
+My background combines hands-on experience in frontend, backend, and mobile development using tools like React, React Native (Expo), TypeScript, Tailwind CSS, Node.js, and more. I’ve led development teams, built scalable apps, implemented complex UI/UX designs, and collaborated across departments using Agile, Jira, and Figma.
+Whether I’m managing international projects or coding up a new feature, I bring the same level of focus: user-centered thinking, clean architecture, and continuous improvement.
         </p>
       </Section>
 
@@ -65,19 +52,34 @@ const About = () => {
         <h3 className="subhead-text text-white text-center sm:text-left">
           My Skills
         </h3>
-        <div className="mt-8 flex flex-wrap justify-center sm:justify-start gap-6 sm:gap-12">
-          {skills.map((skill) => (
-            <div
-              className="block-container w-16 h-16 sm:w-20 sm:h-20 "
-              key={skill.name}
-            >
-              <div className="btn-back rounded-xl" />
-              <div className="btn-front rounded-xl flex justify-center items-center">
-                <img
-                  src={skill.imageUrl}
-                  alt={skill.name}
-                  className="w-2/3 h-2/3 sm:w-1/2 sm:h-1/2 object-contain"
-                />
+        <div className="mt-8">
+          {/* Group skills by type */}
+          {Array.from(new Set(skills.map(skill => skill.type))).map((type) => (
+            <div key={type} className="mb-8">
+              <h4 className="text-lg font-semibold text-white mb-4 text-center sm:text-left">
+                {type}
+              </h4>
+              <div className="flex flex-wrap justify-center sm:justify-start gap-6 sm:gap-8">
+                {skills
+                  .filter((skill) => skill.type === type)
+                  .map((skill) => (
+                    <div
+                      className="group relative block-container w-20 h-20 sm:w-24 sm:h-24 transition-transform duration-300 hover:scale-110"
+                      key={skill.name}
+                    >
+                      <div className="btn-back rounded-xl" />
+                      <div className="btn-front rounded-xl flex flex-col justify-center items-center p-2">
+                        <img
+                          src={skill.imageUrl}
+                          alt={skill.name}
+                          className="w-1/2 h-1/2 object-contain mb-1"
+                        />
+                        <span className="text-xs text-white font-medium text-center leading-tight opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          {skill.name}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
               </div>
             </div>
           ))}

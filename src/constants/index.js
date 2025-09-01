@@ -32,6 +32,7 @@ import {
   laravel,
   php,
   hoviber,
+
 } from "../assets/icons";
 import { vesko } from "../assets/images";
 
@@ -150,7 +151,7 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Internation Project Manager",
+    title: "International Project Manager",
     company_name: "Hoviber",
     icon: hoviber,
     iconBg: "#ff69b4",
@@ -212,12 +213,22 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: estate ,
+    theme: "btn-back-green",
+    name: 'portfolio',
+    description: 'My personal portfolio',
+    link: 'https://spyscout.netlify.app/',
+    sourceCode: 'https://github.com/abhichhetri09/portfolio',
+  },
+  
+  {
     iconUrl: estate,
     theme: "btn-back-red",
     name: "Movie Web Application",
     description:
       "MoviesApp is a React-based web application that allows users to explore movies, view details, and interact with various features. The project is built with Vite, React, and Firebase, and styled using Bootstrap and SASS.",
     link: "https://amflex.netlify.app/",
+    sourceCode: "https://github.com/abhichhetri09/MovieApp",
   },
   {
     iconUrl: car,
@@ -225,21 +236,21 @@ export const projects = [
     name: "Java Bank Application",
     description:
       "A simple Bank application for creating an account, depositing money, withdrawing money, and deleting the account.",
-    link: "https://github.com/abhichhetri09/Java-Bank_Application",
+    sourceCode: "https://github.com/abhichhetri09/Java-Bank_Application",
   },
   {
     iconUrl: pricewise,
     theme: "btn-back-purple",
     name: "Guessing Game",
     description: "A fun guessing game application built in Java.",
-    link: "https://github.com/abhichhetri09/GuessingGame",
+    sourceCode: "https://github.com/abhichhetri09/GuessingGame",
   },
   {
     iconUrl: summiz,
     theme: "btn-back-blue",
     name: "Todo List",
     description: "A simple todo list app to manage tasks.",
-    link: "https://github.com/abhichhetri09/todolist",
+    sourceCode: "https://github.com/abhichhetri09/todolist",
   },
   {
     iconUrl: threads,
@@ -247,13 +258,13 @@ export const projects = [
     name: "Recipe Web Application",
     description:
       "A full-stack solution for users to explore, add, and like different recipes. Built with Spring Boot, Thymeleaf, and PostgreSQL.",
-    link: "https://github.com/abhichhetri09/RecipeApp",
+    sourceCode: "https://github.com/abhichhetri09/RecipeApp",
   },
   {
     iconUrl: snapgram,
     theme: "btn-back-yellow",
     name: "Expense Tracker",
     description: "An app to help users track their expenses.",
-    link: "https://github.com/abhichhetri09/ExpenseTracker",
+    sourceCode: "https://github.com/abhichhetri09/ExpenseTracker",
   },
 ];
