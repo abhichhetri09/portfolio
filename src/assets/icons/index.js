@@ -36,6 +36,8 @@ import swappie from "./swappie.webp";
 import php from "./php.svg";
 import logo from "./logo.png";
 import hoviber from "./hobiver.png";
+import postgres from "./postgres.png";
+import prisma from "./prisma.svg";
 export {
   css,
   express,
@@ -75,4 +77,6 @@ export {
   swappie,
   php,
   hoviber,
+  postgres,
+  prisma,
 };

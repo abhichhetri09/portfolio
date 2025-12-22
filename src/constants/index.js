@@ -32,6 +32,8 @@ import {
   laravel,
   php,
   hoviber,
+  postgres,
+  prisma,
 } from "../assets/icons";
 import { vesko } from "../assets/images";
 
@@ -46,6 +48,7 @@ export const skills = [
     name: "Express",
     type: "Backend",
   },
+
   {
     imageUrl: git,
     name: "Git",
@@ -144,6 +147,16 @@ export const skills = [
   {
     imageUrl: php,
     name: "PHP",
+    type: "Backend",
+  },
+  {
+    imageUrl: postgres,
+    name: "PostgreSQL",
+    type: "Database",
+  },
+  {
+    imageUrl: prisma,
+    name: "Prisma",
     type: "Backend",
   },
 ];
