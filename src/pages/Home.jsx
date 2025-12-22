@@ -41,13 +41,50 @@ const Home = () => {
   };
   const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
   const ref = useRef();
+
+  const handleScrollRight = () => {
+    window.scrollTo({
+      left: window.scrollX + window.innerWidth,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <section className="w-full h-screen relative">
+    <section className="w-full h-screen relative overflow-hidden">
       {currentStage && (
         <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
           <HomeInfo currentStage={currentStage} />
         </div>
       )}
+
+      {/* Scroll Indicator - Right Side */}
+      <div
+        className="absolute right-8 top-1/2 transform -translate-y-1/2 z-20 flex flex-row items-center gap-3 animate-bounce cursor-pointer group"
+        onClick={handleScrollRight}
+      >
+        <span className="text-white/70 text-sm font-medium font-poppins group-hover:text-white transition-colors whitespace-nowrap">
+          Scroll to explore
+        </span>
+        <div className="flex flex-row items-center gap-2">
+          <div className="w-10 h-6 rounded-full border-2 border-white/50 flex items-center justify-end p-2 group-hover:border-white transition-colors">
+            <div className="w-1.5 h-1.5 rounded-full bg-white/70 group-hover:bg-white animate-pulse"></div>
+          </div>
+          <svg
+            className="w-5 h-5 text-white/70 group-hover:text-white transition-colors rotate-[-90deg]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </div>
+      </div>
+
       <Canvas
         className={`w-full h-screen bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"

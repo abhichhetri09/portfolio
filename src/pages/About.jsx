@@ -30,21 +30,22 @@ const About = () => {
                 Abhishek Khati Chhetri
               </span>
             </h1>
-            <p className="lg:text-2xl mt-4 text-white">
-             International Project Manager, Full-stack Developer.
-            </p>
+            <p className="lg:text-2xl mt-4 text-white">Full Stack Developer</p>
           </div>
         </div>
       </Section>
 
       <Section className="mt-5 container text-slate-300 text-sm sm:text-base">
         <h1 className="text-white font-semibold">
-            🔭 International Project Manager/Full-stack Developer | Hoviber
+          Full Stack Developer | Hoviber
         </h1>
         <p>
-        I’m Abhishek Khati Chhetri, a Helsinki-based tech professional currently working as an International Project Manager at Hoviber, where I lead cross-functional digital projects with a strong focus on execution, quality, and collaboration. In addition to my management role, I actively contribute as a Full-Stack and Mobile Developer, bridging business goals with practical, scalable tech solutions.
-My background combines hands-on experience in frontend, backend, and mobile development using tools like React, React Native (Expo), TypeScript, Tailwind CSS, Node.js, and more. I’ve led development teams, built scalable apps, implemented complex UI/UX designs, and collaborated across departments using Agile, Jira, and Figma.
-Whether I’m managing international projects or coding up a new feature, I bring the same level of focus: user-centered thinking, clean architecture, and continuous improvement.
+          As a Full Stack Developer at Hoviber, I contribute to the planning and
+          execution of digital product development in close collaboration with
+          the CEO and development team. Alongside building and maintaining
+          full-stack solutions, I support project workflows and help align
+          product priorities with business goals, ensuring efficient delivery
+          and high-quality implementation across digital platforms.
         </p>
       </Section>
 
@@ -54,35 +55,37 @@ Whether I’m managing international projects or coding up a new feature, I brin
         </h3>
         <div className="mt-8">
           {/* Group skills by type */}
-          {Array.from(new Set(skills.map(skill => skill.type))).map((type) => (
-            <div key={type} className="mb-8">
-              <h4 className="text-lg font-semibold text-white mb-4 text-center sm:text-left">
-                {type}
-              </h4>
-              <div className="flex flex-wrap justify-center sm:justify-start gap-6 sm:gap-8">
-                {skills
-                  .filter((skill) => skill.type === type)
-                  .map((skill) => (
-                    <div
-                      className="group relative block-container w-20 h-20 sm:w-24 sm:h-24 transition-transform duration-300 hover:scale-110"
-                      key={skill.name}
-                    >
-                      <div className="btn-back rounded-xl" />
-                      <div className="btn-front rounded-xl flex flex-col justify-center items-center p-2">
-                        <img
-                          src={skill.imageUrl}
-                          alt={skill.name}
-                          className="w-1/2 h-1/2 object-contain mb-1"
-                        />
-                        <span className="text-xs text-white font-medium text-center leading-tight opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          {skill.name}
-                        </span>
+          {Array.from(new Set(skills.map((skill) => skill.type))).map(
+            (type) => (
+              <div key={type} className="mb-8">
+                <h4 className="text-lg font-semibold text-white mb-4 text-center sm:text-left">
+                  {type}
+                </h4>
+                <div className="flex flex-wrap justify-center sm:justify-start gap-6 sm:gap-8">
+                  {skills
+                    .filter((skill) => skill.type === type)
+                    .map((skill) => (
+                      <div
+                        className="group relative block-container w-20 h-20 sm:w-24 sm:h-24 transition-transform duration-300 hover:scale-110"
+                        key={skill.name}
+                      >
+                        <div className="btn-back rounded-xl" />
+                        <div className="btn-front rounded-xl flex flex-col justify-center items-center p-2">
+                          <img
+                            src={skill.imageUrl}
+                            alt={skill.name}
+                            className="w-1/2 h-1/2 object-contain mb-1"
+                          />
+                          <span className="text-xs text-white font-medium text-center leading-tight opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            {skill.name}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </Section>
 

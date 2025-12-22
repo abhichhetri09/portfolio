@@ -32,7 +32,6 @@ import {
   laravel,
   php,
   hoviber,
-
 } from "../assets/icons";
 import { vesko } from "../assets/images";
 
@@ -151,7 +150,7 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "International Project Manager",
+    title: "Full Stack Developer",
     company_name: "Hoviber",
     icon: hoviber,
     iconBg: "#ff69b4",
@@ -213,14 +212,14 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: estate ,
+    iconUrl: estate,
     theme: "btn-back-green",
-    name: 'portfolio',
-    description: 'My personal portfolio',
-    link: 'https://spyscout.netlify.app/',
-    sourceCode: 'https://github.com/abhichhetri09/portfolio',
+    name: "portfolio",
+    description: "My personal portfolio",
+    link: "https://spyscout.netlify.app/",
+    sourceCode: "https://github.com/abhichhetri09/portfolio",
   },
-  
+
   {
     iconUrl: estate,
     theme: "btn-back-red",
