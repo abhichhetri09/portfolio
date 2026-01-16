@@ -9,8 +9,8 @@ const CTA = () => {
   };
   return (
     <Section>
-      <div className="container py-8 bg-black/20 px-12 rounded-xl flex flex-col gap-4 md:flex-row">
-        <p className="cta-text text-white">
+      <div className="container py-8 bg-slate-200 px-12 rounded-xl flex flex-col gap-4 md:flex-row shadow-md">
+        <p className="cta-text text-slate-800">
           Have a project in mind? <br className="sm:block hidden" />
           Let&apos;s build something together!
         </p>
