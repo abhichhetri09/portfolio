@@ -3,7 +3,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-import { experiences, skills } from "../constants";
+import { experiences, skills, socialLinks } from "../constants";
 import { CTA } from "../components/CTA";
 import React from "react";
 import { pp } from "../assets/images/index";
@@ -31,6 +31,30 @@ const About = () => {
               </span>
             </h1>
             <p className="lg:text-2xl mt-4 text-white">Full Stack Developer</p>
+
+            {/* Social Links */}
+            <div className="flex gap-4 mt-6 justify-center md:justify-start">
+              {socialLinks
+                .filter((link) => link.name !== "Contact")
+                .map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors duration-300 group"
+                  >
+                    <img
+                      src={link.iconUrl}
+                      alt={link.name}
+                      className="w-6 h-6 object-contain"
+                    />
+                    <span className="text-white text-sm font-medium group-hover:text-blue-400 transition-colors">
+                      {link.name}
+                    </span>
+                  </a>
+                ))}
+            </div>
           </div>
         </div>
       </Section>
