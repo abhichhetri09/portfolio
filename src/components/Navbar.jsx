@@ -5,7 +5,9 @@ const Navbar = () => {
 
   return (
     <header
-      className={`header ${pathname === "/" ? "fixed" : "bg-slate-900 sticky"}`}
+      className={`header ${
+        pathname === "/" ? "fixed" : "bg-slate-100 sticky shadow-md"
+      }`}
     >
       {/* <NavLink
         to="/"
@@ -33,8 +35,8 @@ const Navbar = () => {
           className={({ isActive }) =>
             `px-4 py-2 rounded transition-all duration-200 border ${
               isActive
-                ? "bg-black/30 text-white border-white/10"
-                : "text-white hover:bg-black/30 border-transparent"
+                ? "bg-slate-200 text-slate-800 border-slate-300"
+                : "text-slate-700 hover:bg-slate-200 border-transparent"
             }`
           }
         >
@@ -46,8 +48,8 @@ const Navbar = () => {
             className={({ isActive }) =>
               `px-4 py-2 rounded transition-all duration-200 border ${
                 isActive
-                  ? "bg-black/30 text-white border-white/10"
-                  : "text-white hover:bg-black/30 border-transparent"
+                  ? "bg-slate-200 text-slate-800 border-slate-300"
+                  : "text-slate-700 hover:bg-slate-200 border-transparent"
               }`
             }
           >
@@ -58,8 +60,8 @@ const Navbar = () => {
             className={({ isActive }) =>
               `px-4 py-2 rounded transition-all duration-200 border ${
                 isActive
-                  ? "bg-black/30 text-white border-white/10"
-                  : "text-white hover:bg-black/30 border-transparent"
+                  ? "bg-slate-200 text-slate-800 border-slate-300"
+                  : "text-slate-700 hover:bg-slate-200 border-transparent"
               }`
             }
           >
