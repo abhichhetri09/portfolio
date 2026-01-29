@@ -31,7 +31,7 @@ const About = () => {
               </span>
             </h1>
             <p className="lg:text-2xl mt-4 text-slate-700">
-              Full Stack Developer
+              Full Stack Developer / International Project Manager
             </p>
 
             {/* Social Links */}
@@ -63,15 +63,33 @@ const About = () => {
 
       <Section className="mt-5 container text-slate-600 text-sm sm:text-base">
         <h1 className="text-slate-800 font-semibold">
-          Full Stack Developer | Hoviber
+          Full Stack Developer / International Project Manager | Hoviber
         </h1>
         <p>
-          As a Full Stack Developer at Hoviber, I contribute to the planning and
-          execution of digital product development in close collaboration with
-          the CEO and development team. Alongside building and maintaining
-          full-stack solutions, I support project workflows and help align
-          product priorities with business goals, ensuring efficient delivery
-          and high-quality implementation across digital platforms.
+          I’m an International Project Manager based in Helsinki, currently
+          working at Hoviber. While this is my official title, my day-to-day
+          work is primarily hands-on as a Full Stack Software Engineer,
+          collaborating closely with the CEO and development team to plan,
+          build, and deliver scalable digital products. I work across the full
+          development lifecycle — from translating business and product
+          requirements into technical solutions to building, maintaining, and
+          optimizing production-ready web and mobile applications. Alongside
+          development, I coordinate project workflows, support team alignment,
+          and help ensure that technical execution stays aligned with business
+          goals and delivery timelines. With a strong technical background, I
+          bridge the gap between project management and engineering. I value
+          clean architecture, performance, and maintainability, and I thrive in
+          fast-paced environments where ownership, communication, and execution
+          matter. Tech Stack & Technical Background Frontend: React, React
+          Native (Expo), TypeScript, JavaScript, Tailwind CSS, Material UI
+          Mobile: Expo, Expo Router, Cross-platform app development Backend:
+          Node.js, REST APIs, Java (Spring – project/academic experience) State
+          & Data: Redux, TanStack Query Tools & Workflow: Git, GitHub, Jira,
+          Figma, Agile/Scrum Other: API integrations, scalable architecture,
+          product planning, technical coordination I’m open to opportunities
+          where I can contribute as a Full Stack or Frontend-focused Engineer
+          while continuing to take ownership of delivery and cross-team
+          collaboration.
         </p>
       </Section>
 

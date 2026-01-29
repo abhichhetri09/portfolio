@@ -163,17 +163,20 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Developer/ Internation Project Manager",
     company_name: "Hoviber",
     icon: hoviber,
     iconBg: "#ff69b4",
     date: "07/2025 – Present",
     points: [
-      "Contributing to the development of a cross-platform mobile application using modern web and mobile technologies.",
-      "Collaborating with cross-functional teams to deliver scalable, maintainable, and user-centric solutions.",
-      "Leading the frontend mobile team with responsibilities including code reviews, sprint planning, and team coordination.",
-      "Ensuring consistent UI/UX and performance across platforms through reusable components and design system integration.",
-      "Participating in architectural discussions and supporting both frontend and backend development efforts.",
+      "Work primarily as a Full Stack Developer, contributing hands-on to the design, development, and maintenance of web and mobile applications.",
+      "Collaborate closely with the CEO and development team to plan, execute, and deliver digital products aligned with business goals.",
+      "Build and maintain frontend and mobile solutions using React, React Native (Expo), TypeScript, and modern UI frameworks.",
+      "Support backend development and API integrations using Node.js and RESTful services.",
+      "Coordinate project workflows, manage priorities, and ensure smooth communication between technical and non-technical stakeholders.",
+      "Translate product and business requirements into clear technical tasks, ensuring on-time delivery and high-quality implementation.",
+      "Contribute to improving development processes, code quality, and product scalability.",
+      "Tech Stack: React, React Native (Expo), TypeScript, JavaScript, Node.js, REST APIs, Redux, TanStack Query, Tailwind CSS, Material UI, Git, Jira, Figma",
     ],
   },
   {
