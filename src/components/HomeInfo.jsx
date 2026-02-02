@@ -4,20 +4,20 @@ import { InfoBox } from "./InfoBox";
 const HomeInfo = ({ currentStage }) => {
   const renderContent = {
     1: {
-      text: "Hi, 👋 I am Abhishek khati chhetri",
+      text: "Hi, I'm Abhishek Khati Chhetri 👋 — a Full Stack Software Engineer based in Helsinki.",
     },
     2: {
-      text: "I am a full stack developer",
+      text: "I design and build scalable web and mobile applications using modern technologies like React, React Native, TypeScript, and Node.js.",
       btnText: "About Me",
       link: "/about",
     },
     3: {
-      text: "I have been working on Web and Mobile Development for 3 years",
-      btnText: "Visit my portfolio",
+      text: "With 3+ years of hands-on experience, I’ve delivered production-ready solutions across startups and real-world client projects.",
+      btnText: "View My Projects",
       link: "/projects",
     },
     4: {
-      text: "I am always looking for new opportunities. Please feel free to reach out to me.",
+      text: "Open to new opportunities and collaborations. Let’s connect and build something impactful together.",
       btnText: "Contact Me",
       link: "/contact",
     },
