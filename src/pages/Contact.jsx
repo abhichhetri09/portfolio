@@ -85,7 +85,7 @@ const Contact = () => {
     <Section className="h-screen flex items-center">
       <div className="container relative flex lg:flex-row opacity-90">
         <div className="flex-1 min-w-[50%] flex flex-col">
-          <h1 className="head-text text-white">Get in Touch</h1>
+          <h1 className="head-text text-slate-800">Get in Touch</h1>
           <form
             onSubmit={handleFormSubmit}
             ref={formRef}
@@ -93,7 +93,7 @@ const Contact = () => {
           >
             {inputs.map((input) => (
               <div key={input.name} className="flex flex-col space-y-1">
-                <label className="text-white">
+                <label className="text-slate-800">
                   {input.name.charAt(0).toUpperCase() + input.name.slice(1)}
                 </label>
                 <input
@@ -109,7 +109,7 @@ const Contact = () => {
                 />
               </div>
             ))}
-            <label className="text-white">Message</label>
+            <label className="text-slate-800">Message</label>
             <textarea
               name="message"
               className="input"
