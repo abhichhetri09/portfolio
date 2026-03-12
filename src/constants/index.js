@@ -34,6 +34,7 @@ import {
   hoviber,
   postgres,
   prisma,
+  docker,
 } from "../assets/icons";
 import { vesko } from "../assets/images";
 
@@ -159,23 +160,28 @@ export const skills = [
     name: "Prisma",
     type: "Backend",
   },
+  {
+    imageUrl: docker,
+    name: "Docker",
+    type: "Containerization",
+  },
 ];
 
 export const experiences = [
   {
-    title: "Full Stack Developer/ Internation Project Manager",
+    title: "Full Stack Developer",
     company_name: "Hoviber",
     icon: hoviber,
     iconBg: "#ff69b4",
     date: "07/2025 – Present",
     points: [
-      "Work primarily as a Full Stack Developer, contributing hands-on to the design, development, and maintenance of web and mobile applications.",
-      "Collaborate closely with the CEO and development team to plan, execute, and deliver digital products aligned with business goals.",
-      "Build and maintain frontend and mobile solutions using React, React Native (Expo), TypeScript, and modern UI frameworks.",
-      "Support backend development and API integrations using Node.js and RESTful services.",
-      "Coordinate project workflows, manage priorities, and ensure smooth communication between technical and non-technical stakeholders.",
-      "Translate product and business requirements into clear technical tasks, ensuring on-time delivery and high-quality implementation.",
-      "Contribute to improving development processes, code quality, and product scalability.",
+      "Design and maintain scalable cross-platform mobile applications using React Native (Expo) and TypeScript.",
+      "Build REST APIs using Node.js and integrate them with mobile applications.",
+      "Work with PostgreSQL using Prisma and Drizzle ORM for schema design and database management.",
+      "Implement secure authentication flows using OAuth and Auth0.",
+      "Optimize application performance across iOS and Android platforms.",
+      "Collaborate closely with designers and developers to deliver complete product features.",
+      "Use AI-assisted tools such as Cursor IDE to improve development efficiency.",
       "Tech Stack: React, React Native (Expo), TypeScript, JavaScript, Node.js, REST APIs, Redux, TanStack Query, Tailwind CSS, Material UI, Git, Jira, Figma",
     ],
   },
@@ -227,6 +233,14 @@ export const socialLinks = [
 ];
 
 export const projects = [
+  {
+    iconUrl: threads,
+    theme: "btn-back-blue",
+    name: "Weather App",
+    description: "A weather app to see the current weather of a city.",
+    link: "https://abhichhetri09.github.io/weather-app/",
+    sourceCode: "https://github.com/abhichhetri09/weather-app",
+  },
   {
     iconUrl: estate,
     theme: "btn-back-green",

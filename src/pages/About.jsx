@@ -31,7 +31,7 @@ const About = () => {
               </span>
             </h1>
             <p className="lg:text-2xl mt-4 text-slate-700">
-              Full Stack Developer / International Project Manager
+              Full Stack Developer
             </p>
 
             {/* Social Links */}
@@ -66,30 +66,14 @@ const About = () => {
           Full Stack Developer / International Project Manager | Hoviber
         </h1>
         <p>
-          I’m an International Project Manager based in Helsinki, currently
-          working at Hoviber. While this is my official title, my day-to-day
-          work is primarily hands-on as a Full Stack Software Engineer,
-          collaborating closely with the CEO and development team to plan,
-          build, and deliver scalable digital products. I work across the full
-          development lifecycle — from translating business and product
-          requirements into technical solutions to building, maintaining, and
-          optimizing production-ready web and mobile applications. Alongside
-          development, I coordinate project workflows, support team alignment,
-          and help ensure that technical execution stays aligned with business
-          goals and delivery timelines. With a strong technical background, I
-          bridge the gap between project management and engineering. I value
-          clean architecture, performance, and maintainability, and I thrive in
-          fast-paced environments where ownership, communication, and execution
-          matter. Tech Stack & Technical Background Frontend: React, React
-          Native (Expo), TypeScript, JavaScript, Tailwind CSS, Material UI
-          Mobile: Expo, Expo Router, Cross-platform app development Backend:
-          Node.js, REST APIs, Java (Spring – project/academic experience) State
-          & Data: Redux, TanStack Query Tools & Workflow: Git, GitHub, Jira,
-          Figma, Agile/Scrum Other: API integrations, scalable architecture,
-          product planning, technical coordination I’m open to opportunities
-          where I can contribute as a Full Stack or Frontend-focused Engineer
-          while continuing to take ownership of delivery and cross-team
-          collaboration.
+          Full Stack Software Engineer with hands-on experience building
+          scalable web and mobile applications. Skilled in developing modern
+          user interfaces, designing REST APIs, and integrating backend services
+          with cross-platform mobile applications. Currently working at Hoviber,
+          contributing to both frontend and backend development while delivering
+          production-ready features for mobile platforms. Experienced in React,
+          React Native, TypeScript, Node.js, and PostgreSQL, with strong
+          knowledge of modern development workflows in Agile environments.
         </p>
       </Section>
 
@@ -120,7 +104,7 @@ const About = () => {
                             alt={skill.name}
                             className="w-1/2 h-1/2 object-contain mb-1"
                           />
-                          <span className="text-xs text-slate-800 font-medium text-center leading-tight opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <span className="text-xs text-slate-800 font-medium text-center leading-tight">
                             {skill.name}
                           </span>
                         </div>
@@ -128,7 +112,7 @@ const About = () => {
                     ))}
                 </div>
               </div>
-            )
+            ),
           )}
         </div>
       </Section>

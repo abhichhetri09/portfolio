@@ -38,6 +38,7 @@ import logo from "./logo.png";
 import hoviber from "./hobiver.png";
 import postgres from "./postgres.png";
 import prisma from "./prisma.svg";
+import docker from "./docker-icon.png";
 export {
   css,
   express,
@@ -79,4 +80,5 @@ export {
   hoviber,
   postgres,
   prisma,
+  docker,
 };

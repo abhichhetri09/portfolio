@@ -4,21 +4,21 @@ import { InfoBox } from "./InfoBox";
 const HomeInfo = ({ currentStage }) => {
   const renderContent = {
     1: {
-      text: "Hi, I'm Abhishek Khati Chhetri 👋 — a Full Stack Software Engineer based in Helsinki.",
+      text: "Hi, I’m Abhishek Khati Chhetri — a full‑stack software engineer based in Helsinki, focused on building reliable web and mobile products.",
     },
     2: {
-      text: "I design and build scalable web and mobile applications using modern technologies like React, React Native, TypeScript, and Node.js.",
-      btnText: "About Me",
+      text: "I turn product ideas into shipped features using React, React Native, TypeScript, Node.js, PostgreSQL, and modern tooling.",
+      btnText: "More about my background",
       link: "/about",
     },
     3: {
-      text: "With 3+ years of hands-on experience, I’ve delivered production-ready solutions across startups and real-world client projects.",
-      btnText: "View My Projects",
+      text: "With over three years of hands‑on experience, I’ve contributed to production systems for companies like Hoviber and Vesko.",
+      btnText: "See selected projects",
       link: "/projects",
     },
     4: {
-      text: "Open to new opportunities and collaborations. Let’s connect and build something impactful together.",
-      btnText: "Contact Me",
+      text: "I’m open to full‑time roles, contract work, and collaborations where I can help ship thoughtful, user‑centric software.",
+      btnText: "Let’s talk",
       link: "/contact",
     },
   };
